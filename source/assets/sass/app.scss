@@ -1,0 +1,13 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+// Components
+@import "setting";
+@import "global";
+@import "header";
+@import "footer";
+@import "breadcrumb";
+@import "sidebar";
+@import "applications";
+
+// Page
+@import "home";
+@import "dashboard";

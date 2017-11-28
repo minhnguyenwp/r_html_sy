@@ -1,0 +1,32 @@
+block vars
+    title JEUX EN LIGNE GRATUIT, JEUX PAR NAVIGATEUR, JEUX MMORPG ET JEUX DE STRATÉGIE DE 2015 !
+doctype html
+//[if IE 8]><html lang="en" class="no-js ie ie8"><![endif]
+//[if IE 9]><html lang="en" class="no-js ie ie9"><![endif]
+//[if gt IE 9]><!
+html(class="no-js", lang="en")
+    //<![endif]
+    head
+        meta(charset="utf-8")
+        title=title
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        //- meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        //-- Call font
+        link(href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700', rel='stylesheet', type='text/css')
+        link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+        link(rel="shortcut icon", href="icons/favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="css/app.css")
+        //--script(src="js/modernizr.js")
+    body(class="body-css "  )
+
+        section.main-wrapper
+            .container
+                include ../includes/header.jade
+            
+            block content
+            
+            include ../includes/footer.jade
+        
+        include ../includes/scripts.jade

@@ -1,0 +1,136 @@
+
+<title>JEUX EN LIGNE GRATUIT, JEUX PAR NAVIGATEUR, JEUX MMORPG ET JEUX DE STRATÉGIE DE 2015 !</title><!DOCTYPE html>
+<!--[if IE 8]><html lang="en" class="no-js ie ie8"><![endif]-->
+<!--[if IE 9]><html lang="en" class="no-js ie ie9"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en" class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="keywords" content=""><!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  </head>
+  <body class="body-css ">
+    <section class="main-wrapper">
+      <sidebar class="sidebar dark-blue">
+        <div class="head-side"> <a href=""><span class="icon"><i class="fa fa-user-circle-o"></i></span><span class="val">ProjAdmin<i class="fa fa-sign-out float-right sign-out"></i></span></a></div>
+        <ul class="list-side">
+          <li class="item"><a href=""><span class="icon"><i class="fa fa-exclamation-triangle"></i></span><span class="val">Risk Portfolio</span></a></li>
+          <li class="item"><a href=""><span class="icon"><i class="fa fa-question-circle"></i></span><span class="val">Help</span></a></li>
+          <li class="item"><a href=""><span class="icon"><i class="fa fa-cog"></i></span><span class="val">Configuration</span></a></li>
+        </ul>
+      </sidebar>
+      <div class="content-wrapper">
+        <div class="breadcrumb-body">
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="">All Apps</a></li>
+            <li class="breadcrumb-item"><a href="">Application A</a></li>
+          </ul>
+        </div>
+        <div class="main-content">
+          <div class="page application-page">
+            <h3 class="application-title">Application A
+              <button type="button" class="btn btn-primary float-right">Download Reports&nbsp;&nbsp;<i class="fa fa-caret-down"> </i></button>
+            </h3>
+            <section class="section score-section"> 
+              <div class="title">Score</div>
+              <div class="row">
+                <div class="col">
+                  <div class="score-item">
+                    <div class="text">Coverity</div>
+                    <div class="value">
+                      <div class="number green-text green-br">90</div>
+                    </div>
+                  </div>
+                  <div class="time">Last run: 10:30 2017/10/27</div>
+                </div>
+                <div class="col">
+                  <div class="score-item">
+                    <div class="text">Protocode</div>
+                    <div class="value">
+                      <div class="number blue-text blue-br">70</div>
+                    </div>
+                  </div>
+                  <div class="time">Last run: 10:30 2017/10/27</div>
+                </div>
+                <div class="col">
+                  <div class="score-item">
+                    <div class="text">MS Portal</div>
+                    <div class="value">
+                      <div class="number yellow-text yellow-br">50</div>
+                    </div>
+                  </div>
+                  <div class="time">Last run: 10:30 2017/10/27</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="summary">Score Completeness <span class="blue-text">100% </span>(<span class="yellow-text">3 </span>out of <span class="yellow-text">3 </span>tools generate report)</div>
+                </div>
+              </div>
+            </section>
+            <section class="section issue-severity-section"> 
+              <div class="title">Issues by severities</div>
+              <div class="row">
+                <div class="col">
+                  <div class="issue-item">
+                    <div class="number red-text">205</div>
+                    <div class="desc">Vulnerabilites</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="issue-item">
+                    <div class="number yellow-text">104</div>
+                    <div class="desc">Critical</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="issue-item">
+                    <div class="number yellow-text">93</div>
+                    <div class="desc">High</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="issue-item">
+                    <div class="number blue-text">3</div>
+                    <div class="desc">Medium</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="issue-item">
+                    <div class="number green-text">3</div>
+                    <div class="desc">Low</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="issue-item">
+                    <div class="number mid-night-text">3</div>
+                    <div class="desc">Information</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section issue-category-section">
+              <div class="title">Issues by categories (OWASP Top 10)</div>
+              <div id="categoryChart" class="category-chart"></div>
+            </section>
+            <section class="section issue-tool-section">
+              <div class="title">Issues by tool</div>
+              <div id="toolChart" class="tool-chart"></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/libs.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/start.js"></script>
+  </body>
+</html>

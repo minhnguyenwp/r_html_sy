@@ -1,0 +1,85 @@
+extends layouts/layout
+
+block breadcrumb
+    .breadcrumb-body
+        ul.breadcrumb
+            li.breadcrumb-item
+                a(href='') All Apps
+            li.breadcrumb-item
+                a(href='') Application A
+
+block content
+    div.main-content
+        .page.application-page
+            h3.application-title Application A
+                button(type="button").btn.btn-primary.float-right
+                    | Download Reports&nbsp;&nbsp;
+                    i.fa.fa-caret-down 
+            section.section.score-section 
+                .title Score
+                .row
+                    .col
+                        .score-item
+                            .text Coverity
+                            .value
+                                .number.green-text.green-br 90
+                        .time Last run: 10:30 2017/10/27
+                    .col
+                        .score-item
+                            .text Protocode
+                            .value
+                                .number.blue-text.blue-br 70
+                        .time Last run: 10:30 2017/10/27
+                    .col
+                        .score-item
+                            .text MS Portal
+                            .value
+                                .number.yellow-text.yellow-br 50
+                        .time Last run: 10:30 2017/10/27
+                .row
+                    .col
+                        .summary Score Completeness 
+                            span.blue-text 100% 
+                            | (
+                            span.yellow-text 3 
+                            | out of 
+                            span.yellow-text 3 
+                            | tools generate report)
+            section.section.issue-severity-section 
+                .title Issues by severities
+                .row
+                    .col
+                        .issue-item
+                            .number.red-text 205
+                            .desc Vulnerabilites
+                    .col
+                        .issue-item
+                            .number.yellow-text 104
+                            .desc Critical
+                    .col
+                        .issue-item
+                            .number.yellow-text 93
+                            .desc High
+                    .col
+                        .issue-item
+                            .number.blue-text 3
+                            .desc Medium
+                    .col
+                        .issue-item
+                            .number.green-text 3
+                            .desc Low
+                    .col
+                        .issue-item
+                            .number.mid-night-text 3
+                            .desc Information
+            section.section.issue-category-section
+                .title Issues by categories (OWASP Top 10)
+                #categoryChart.category-chart
+            section.section.issue-tool-section
+                .title Issues by tool
+                #toolChart.tool-chart
+                    
+                
+            
+        
+                    

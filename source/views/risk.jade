@@ -1,0 +1,70 @@
+extends layouts/layout
+
+block breadcrumb
+    .breadcrumb-body
+        ul.breadcrumb
+            li.breadcrumb-item
+                a(href='') Risk Porfolio
+
+block content
+    div.main-content
+        .page.risk-page
+            button(type="button").btn.btn-primary.float-right
+                i.fa.fa-plus &nbsp;&nbsp;Create Application
+                
+            ul.applications
+                li.application-item
+                    .item-body
+                        a(href='application').title Application A
+                        .risk
+                            .number.red-text 206
+                            .desc Vulnerabilities
+                        .score
+                            .number.green-text 66
+                            .desc Score
+                        .actions 
+                            span.icon
+                                i.fa.fa-pencil 
+                            span.icon    
+                                i.fa.fa-trash
+                li.application-item
+                    .item-body
+                        a(href='application').title Application B
+                        .risk
+                            .number.red-text 30
+                            .desc Vulnerabilities
+                        .score
+                            .number.green-text 100
+                            .desc Score
+                        .actions 
+                            span.icon
+                                i.fa.fa-pencil 
+                            span.icon    
+                                i.fa.fa-trash
+                li.application-item
+                    .item-body
+                        a(href='application').title Application C
+                        .risk
+                            .number.red-text 30
+                            .desc Vulnerabilities
+                        .score
+                            .number.green-text 66
+                            .desc Score
+                        .actions 
+                            span.icon
+                                i.fa.fa-pencil 
+                            span.icon    
+                                i.fa.fa-trash      
+                                
+                                
+            .application-paging
+                span.prev-btn Previous
+                ul.paging
+                    li.paging-item
+                        .paging-btn.active 1
+                    li.paging-item
+                        .paging-btn 2
+                    li.paging-item
+                        .paging-btn 3
+                span.next-btn Next
+                    
